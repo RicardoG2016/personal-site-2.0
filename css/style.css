@@ -472,7 +472,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 3px;
   background: #03C4EB;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+hr{
+  max-width: 750px;
+  padding: 20px 0px;
 }
 
 /* Get Started Section
@@ -483,7 +488,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container {
-  background: url(../img/me.jpg) left top no-repeat;
+  height: 350px;
+}
+
+.about-img img{
+  padding: 1%;
+  max-width: 350px;
+  max-height: 350px;
 }
 
 #about .about-content {
