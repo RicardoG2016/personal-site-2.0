@@ -1,0 +1,26 @@
+{
+  "name": "personal-site",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RicardoG2016/personal-site-2.0.git"
+  },
+  "author": "Ricardo Gomez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RicardoG2016/personal-site-2.0/issues"
+  },
+  "homepage": "https://github.com/RicardoG2016/personal-site-2.0#readme"
+}

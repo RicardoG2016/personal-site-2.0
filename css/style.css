@@ -6,6 +6,7 @@ body {
   background: #fff;
   color: #26322d;
   font-family: "Open Sans", sans-serif;
+  font-size: 18px;
 }
 
 a {
@@ -17,7 +18,6 @@ a:hover, a:active, a:focus {
   color: #03c5ec;
   outline: none;
   text-decoration: none;
-  /*cursor: pointer;*/
 }
 
 p {
@@ -32,19 +32,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px 0;
   padding: 0;
   color: #26322d;
+  font-size: 30px;
 }
-
-/* Prelaoder */
-/*#preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  /*background: #fff url("../img/austin.jpg") no-repeat center center;*/
-/*}*/
 
 /* Back to top button */
 .back-to-top {
@@ -106,9 +95,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h1 {
-  font-size: 100px;
-  margin: 40px 0 10px 0;
-  padding-bottom: 50px;
+  font-size: 80px;
+  padding-bottom: 90px;
   font-weight: 700;
   line-height: 48px;
   text-transform: uppercase;
@@ -117,14 +105,15 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    padding-bottom: 60px;
+    font-size: 36px;
     line-height: 36px;
   }
 }
 
 #hero h2{
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 768px) {
@@ -134,14 +123,38 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
   }
   #hero h2 .rotating {
+    font-size: 19px;
     display: block;
     color: #fff;
     float: left;
   }
 }
 
+@media (max-width: 460px) {
+  h1 {
+    padding: 0px;
+  }
+  .actions{
+    padding-top: 140px;
+    max-width: 100%;
+    max-width: 50%;
+    margin: 0px auto;
+  }
+
+  .actions a{
+    text-align: center;
+  }
+}
+
 #hero .rotating > .animated {
   display: inline-block;
+}
+
+.hero-detail {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform:  translateX(-50%) translateY(-50%);
 }
 
 #hero .actions a {
@@ -161,6 +174,8 @@ h1, h2, h3, h4, h5, h6 {
   background: #03C4EB;
   border: 2px solid #03C4EB;
   color: #fff;
+  width: 130px;
+  text-align: center;
 }
 
 #hero .btn-get-started:hover {
@@ -453,9 +468,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Sections
 --------------------------------------------------------------*/
 /* Sections Common
---------------------------------*/
+------------------------------*/
 .section-title {
-  font-size: 38px;
+  font-size: 40px;
   color: #26322d;
   text-transform: uppercase;
   text-align: center;
@@ -464,7 +479,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .section-description {
   text-align: center;
-  margin-bottom: 40px;
+  /*margin-bottom: 40px;*/
 }
 
 .section-title-divider {
@@ -475,11 +490,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 40px;
 }
 
-hr{
-  max-width: 750px;
-  padding: 20px 0px;
-}
-
 /* Get Started Section
 --------------------------------*/
 #about {
@@ -488,17 +498,25 @@ hr{
 }
 
 #about .about-container {
-  height: 350px;
+  height: 300px;
 }
 
 .about-img img{
-  padding: 1%;
-  max-width: 350px;
-  max-height: 350px;
+  padding: 5%;
+  padding-right: 0;
+  padding-left: 5%;
+  max-width: 90%;
+  max-height: 90%;
+  padding-bottom: 15%;
+}
+
+.about-img{
+  text-align: center;
 }
 
 #about .about-content {
   background: #fff;
+  margin-top: 20px;
 }
 
 #about .about-title {
@@ -513,6 +531,16 @@ hr{
 
 #about .about-text:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  img{
+    padding-bottom: 0;
+  }
+
+  section#about{
+    padding-bottom: 0px;
+  }
 }
 
 /* Portfolio Section
@@ -589,6 +617,68 @@ background-image{
   transform: translate3d(0, 0, 0);
 }
 
+.mobile-view{
+  display: none;
+}
+
+@media (max-width: 414px) {
+
+  #contact{
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  a.iphone-img{
+    padding-top: 20px;
+  }
+
+  h3.project-title.section-title{
+    margin-top: 80px;
+    margin-bottom: 0px;
+  }
+
+  h3.ref.section-title{
+    margin-top: 180px;
+  }
+
+  #portfolio .portfolio-item{
+    height: 300px;
+  }
+  div.mobile-view{
+    margin-top: 130px;
+  }
+  #about .about-content {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .project-title{
+    margin-top:100px;
+  }
+  .ipad{
+    margin-top: 80px;
+  }
+
+  h3.section-title{
+    margin-top: 30px;
+  }
+
+  .web-view.iphone{
+    display: none;
+  }
+
+  .mobile-view{
+    display: block;
+    margin-top: 260px;
+  }
+
+
+}
+
 /* Team Section
 --------------------------------*/
 #team {
@@ -619,7 +709,7 @@ background-image{
 #team .member span {
   font-style: italic;
   display: block;
-  font-size: 13px;
+  font-size: 18px;
 }
 
 #team .member .social {
@@ -714,4 +804,13 @@ button:hover{
   -webkit-box-shadow: 0px 9px 28px -1px rgba(201,201,201,1);
   -moz-box-shadow: 0px 9px 28px -1px rgba(201,201,201,1);
   box-shadow: 0px 9px 28px -1px rgba(201,201,201,1);
+}
+
+li a {
+    display: inline;
+    float: right;
+}
+.social{
+  width: 400px;
+  padding-left: 0;
 }
