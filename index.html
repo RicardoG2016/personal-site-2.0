@@ -107,14 +107,14 @@
       </div>
       
       <div class="p-row">
-        <div class="col-md-6 col-sm-12 wow fadeInUp">
+        <div class="col-md-7 col-sm-12 wow fadeInUp">
           <a class="portfolio-item" style="background-image: url(img/peribit.png);" href="">
           </a>
         </div>
       
-        <div class="col-md-6 col-sm-12 wow fadeInUp">
+        <div class="col-md-5 col-sm-12 wow fadeInUp">
           <div class="details">
-            <h4>Peribit Web App</h4>
+            <h4 id="mac-title">Peribit Web App</h4>
             <p>Peribit is a fully responsive complete social media platform written in Rails, Javascript and hosted on Heroku.</p>
             <p>Peribit allows users to post, follow, like, share, comment and hashtag within the app.</p>
             <button class="p-button btn btn-default"><a href="http://www.peribit.io/users/sign_up" target="_blank" >Try it Out!</a></button>
@@ -147,13 +147,13 @@
       <div class=" col-md-6 wow fadeInUp">
         <div class="p-row">
           <div class="col-md-6 wow fadeInUp">
-           <a class="iphone-img" style="background-image: url(img/iphone.png);" href="">
+           <a class="iphone-img" style="background-image: url(img/2.png);" href="">
            </a>
           </div>
         </div>
 
         <div class="details">
-          <h4>Music Web App</h4>
+          <h4 class="iphone-title">Music Web App</h4>
           <p> Spoti-find is a mobile first web application created with Angular, Node.js, Typescript and the Spotify API. Spoti-find is currently hosted on Google Firebase.</p>
           <button class="p-button btn btn-default"><a href="http
           <button class="p-button"><a href="https://spoti-find.firebaseapp.com/" target="_blank">Try it Out!</a></button>
@@ -171,7 +171,7 @@
       
         <div class="col-md-6 col-sm-12 wow fadeInUp">
           <div class="details">
-            <h4>Connect4 and TicTacToe</h4>
+            <h4 class="ipad-title">Connect4 and TicTacToe</h4>
             <p>The games were built with HTML5, CSS3, Javascript and Jquery. All hosted on Google Firebase.</p>
             <button class="p-button btn btn-default"><a href="http://www.peribit.io/users/sign_up" target="_blank" >Try it Out!</a></button>
             <button class="p-button btn btn-default"><a href="https://github.com/RicardoG2016/peribit" target="_blank" >Github</a></button>
@@ -248,7 +248,6 @@
         <div class="col-md-12">
           <h3 class="ref section-title">References</h3>
           <div class="section-title-divider"></div>
-<!--           <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
         </div>
       </div>
       
@@ -307,23 +306,24 @@
           <div class="form">
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
+            <form method="post" role="form" class="contactForm" id="contactForm">
                 <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" required placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter your name" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="email" required placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <input type="text" class="form-control" name="subject" id="subject" required placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least an 8 character subject" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please provide a message" placeholder="Message"></textarea>
                   <div class="validation"></div>
                 </div>
+                <div id="success"> </div>
                 <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
@@ -386,6 +386,9 @@
   <script src="js/custom.js"></script>
   
   <script src="contactform/contactform.js"></script>
+
+  <script src="./js/jqBootstrapValidation.js"></script>
+  <script src="./js/contact_me.js"></script>
   
     
 </body>
