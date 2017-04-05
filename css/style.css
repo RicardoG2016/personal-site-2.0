@@ -747,7 +747,7 @@ background-image{
 }
 
 #contact .info p {
-  padding: 0 0 10px 50px;
+  padding: 0 0 10px 0px;
   line-height: 24px;
 }
 
@@ -794,6 +794,7 @@ background-image{
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
+  margin-bottom: 30px;
 }
 
 #contact .form button[type="submit"]:hover {
@@ -810,7 +811,17 @@ li a {
     display: inline;
     float: right;
 }
-.social{
-  width: 400px;
-  padding-left: 0;
+
+@media (max-width: 992px) {
+  div.info{
+    text-align: center;
+  }
+  #contact .info p{
+    padding-left: 0px;
+  }
+
 }
+
+
+
+
