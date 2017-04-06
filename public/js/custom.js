@@ -1,9 +1,9 @@
 jQuery(document).ready(function( $ ) {
-
   // Preloader
-  $(window).load(function(){
-    $('#preloader').delay(100).fadeOut('slow',function(){$(this).remove();});
-  });
+  // $(window).load(function(){
+    console.log('pass');    
+    $('#preloader').delay(700).fadeOut('slow',function(){$(this).remove();});
+  // });
 
   // Hero rotating texts
   $("#hero .rotating").Morphext({
@@ -12,6 +12,16 @@ jQuery(document).ready(function( $ ) {
     speed: 3000
   });
   
+  $(function () {
+      $('.SendEmail').click(function (event) {
+        var email = 'gomez.r@live.com';
+        var subject = 'Just saw your personal site.';
+        // var emailBody = '';
+        // var attach = '';
+        document.location = "mailto:"+email+"?subject="+subject;
+      });
+    });
+
   // Initiate the wowjs
   new WOW().init();
   

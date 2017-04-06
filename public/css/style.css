@@ -2,6 +2,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   background: #fff;
   color: #26322d;
@@ -33,6 +34,18 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   color: #26322d;
   font-size: 30px;
+}
+
+/* Prelaoder */
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #fff url("../img/preloader.svg") no-repeat center center;
 }
 
 /* Back to top button */
@@ -834,6 +847,10 @@ button:hover{
 li a {
     display: inline;
     float: right;
+}
+
+section#portfolio{
+  padding-bottom: 0px;
 }
 
 @media (max-width: 992px) {
