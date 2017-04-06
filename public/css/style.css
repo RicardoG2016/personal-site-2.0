@@ -641,6 +641,10 @@ background-image{
     padding-top: 20px;
   }
 
+  a.ipad-img{
+    margin-bottom: 25px;
+  }
+
   h3.project-title.section-title{
     margin-top: 0px;
     margin-bottom: 0px;
