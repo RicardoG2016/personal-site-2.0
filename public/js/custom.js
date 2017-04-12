@@ -1,7 +1,5 @@
 jQuery(document).ready(function( $ ) {
-  // Preloader
-  // $(window).load(function(){
-    console.log('pass');    
+  // Preloader   
     $('#preloader').delay(700).fadeOut('slow',function(){$(this).remove();});
   // });
 
@@ -12,6 +10,7 @@ jQuery(document).ready(function( $ ) {
     speed: 3000
   });
   
+  // email sends to me
   $(function () {
       $('.SendEmail').click(function (event) {
         var email = 'gomez.r@live.com';

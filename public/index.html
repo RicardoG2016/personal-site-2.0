@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Ricardo Gomez</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
   <meta content="" name="keywords">
   <meta content="" name="description">
     
@@ -20,9 +21,6 @@
   <meta name="twitter:title" content="">
   <meta name="twitter:description" content="">
   <meta name="twitter:image" content="">
-  
-  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
-  <link href="favicon.ico" rel="shortcut icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet"> 
@@ -35,14 +33,7 @@
   <link href="lib/animate-css/animate.min.css" rel="stylesheet">
   
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-  
-<!-- =======================================================
-  Theme Name: Imperial
-  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
-  Author: BootstrapMade.com
-  Author URL: https://bootstrapmade.com
-======================================================= -->
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -55,18 +46,15 @@
     <div class="hero-container">
       <div class="wow fadeIn">
         <div col-md-12 col-sm-6>
-        <div class="intro-header">
-          <h1>Ricardo Gomez</h1>
-        </div>
-        <div class="intro-detail">
-          <h2> <span class="rotating hero-detail">Web Developer, Team Player, Foodie, Coffee Fanatic, Comic Nerd, Houston Rocket's Fan, Urban Explorer, Runner, Chef</span></h2>
-        </div>
-        <div class="actions">
-          <a href="https://www.linkedin.com/in/ricardog2016/" class="btn-get-started">Linkedin</a>
-          <a href="https://github.com/RicardoG2016" class="btn-get-started">Github</a>
-          <a href="#portfolio" class="btn-get-started">Projects</a>
-          <a class="SendEmail btn-get-started">Contact</a>
-        </div>
+          <div class="intro-header"><h1>Ricardo Gomez</h1></div>
+          <div class="intro-detail">
+            <h2> <span class="rotating hero-detail">Web Developer, Team Player, Foodie, Coffee Fanatic, Comic Nerd, Houston Rocket's Fan, Urban Explorer, Runner, Chef</span></h2>
+         </div>
+          <div class="actions">
+            <a href="https://github.com/RicardoG2016" class="btn-get-started">Github</a>
+            <a href="#portfolio" class="btn-get-started">Projects</a>
+            <a class="SendEmail btn-get-started">Contact</a>
+          </div>
         </div>
       </div>
     </div>
@@ -77,9 +65,6 @@
 ============================-->
   <header id="header">
     <div class="container">
-<!--     
-      <div id="logo" class="pull-left">
-      </div> -->
         
       <nav id="nav-menu-container">
         <ul class="nav-menu">
@@ -101,8 +86,8 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="project-title section-title">Projects</h3>
-            <div class="section-title-divider">
+          <h3 class="section-title">Projects</h3>
+            <div class="p section-title-divider">
             </div>
         </div>
       </div>
@@ -136,7 +121,7 @@
         </div>
       </div>
 
-      <div class="p-row">
+      <div class="p-row p-iphone-row">
         <div class="col-md-6 wow fadeInUp">
            <a class="iphone-img" style="background-image: url(img/iphone.png);" href="https://spoti-find.firebaseapp.com/">
            </a>
@@ -146,7 +131,7 @@
 
     <div class="mobile-view">
       <div class=" col-md-6 wow fadeInUp">
-        <div class="p-row">
+        <div class="p-row  p-iphone-row">
           <div class="col-md-6 wow fadeInUp">
            <a class="iphone-img" style="background-image: url(img/2.png);" href="https://spoti-find.firebaseapp.com/">
            </a>
@@ -172,25 +157,14 @@
       
         <div class="col-md-6 col-sm-12 wow fadeInUp">
           <div class="details">
-            <h4 class="ipad-title">Connect4 & TicTacToe</h4>
+            <h4 class="ipad-title">Games</h4>
             <p>The games were built with HTML5, CSS3, Javascript and Jquery. All hosted on Google Firebase.</p>
-            <button class="p-button btn btn-default"><a href="https://github.com/RicardoG2016/JQuery_ConnectFour" target="_blank" >Try it Out!</a></button>
-            <button class="p-button btn btn-default"><a href="https://github.com/RicardoG2016/JQuery_ConnectFour" target="_blank" >Github</a></button>
+            <button class="p-button btn btn-default"><a href="https://games-7bbe7.firebaseapp.com/" target="_blank" >Try it Out!</a></button>
+            <button class="p-button btn btn-default"><a href="https://github.com/RicardoG2016/games" target="_blank" >Github</a></button>
           </div>
         </div>
       </div>
 </div>
-<!--       <div class="row">
-        <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-1.jpg);" href="">
-            <div class="details">
-              <h4>Portfolio 1</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-        
-  </section>
 
 <!--==========================
   About Section
@@ -199,29 +173,11 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">About Me</h3>
+          <h3 id="about-title " class="section-title">About</h3>
           <div class="section-title-divider"></div>
         </div>
       </div>
     </div>
-
-<!--       <div class="ipad p-row">
-        <div class="col-md-6 col-sm-12 ipad wow fadeInUp">
-          <a class="portfolio-item" style="background-image: url(img/me.jpg);" href="">
-          </a>
-        </div>
-      
-        <div class="col-md-6 col-sm-12 wow fadeInUp">
-          <div class="about-content">
-            <p class="about-text">
-            My business experience during mergers, acquisitions and data migrations has prepared me to thrive in any environment while my education at Dev Bootcamp has provided a strong foundation of web development principles.
-            </p>
-            <p class="about-text">
-            I believe that as a developer our ability to solve the world’s problems are only limited by our imagination and willingness to solve them. Feel free to contact me at gomez.r@live.com
-            </p>
-          </div>
-        </div>
-      </div> -->
 
     <div class="col-md-6 about-img">
       <img src="./img/me.jpg">
@@ -230,13 +186,15 @@
       <div class="row">
         <div class="col-md-6 about-content">
           <p class="about-text">
-            I've always had a passion for tech, software and solving existing problems. My business experience during mergers, acquisitions and data migrations at Lin Digital prepared me with the uncertainties faced by todays technology companies while my education at Dev Bootcamp has provided a strong foundation of web development principles that I've built on.
+            I've always had a passion for technology, learning and helping others. I moved to Austin,Tx from San Diego,Ca to transition from business to development. I'd consider myself an early adopter with most technology, hardware or software. Whether it's drones, IoT, beta software or a new javascript framework there's always something new to try out.
           </p>
-          <p class="about-text">
-            I believe that as a developer our ability to solve the world’s problems are only limited by our imagination and willingness to solve them. Feel free to contact me if you are looking for dev talent or want to work on a project together to solve an existing problem.
+          <p class="about-text">While new tech is fun, the main reason I became a developer is to solve problems and help others. Through software we're able to solve problems that directly improve the lives of millions of people. I have some exciting projects coming up. Feel free to contact me if you're looking for dev talent.
           </p>
-          <button class="p-button btn btn-default"><a href="resume.pdf" target="_blank">Resume</a></button>
-          <button class="p-button btn btn-default"><a href="https://github.com/RicardoG2016" target="_blank" >Github</a></button>
+          <div class="btn-action">
+            <button class="p-button btn btn-default"><a href="resume.pdf" target="_blank">Resume</a></button>
+            <button class="p-button btn btn-default"><a href="https://github.com/RicardoG2016" target="_blank" >Github</a></button>
+            <button class="p-button btn btn-default"><a href="https://www.linkedin.com/in/ricardog2016/" class="btn-get-started">Linkedin</a></button>
+          </div>
         </div>
       </div>
     </div>
@@ -254,41 +212,45 @@
         </div>
       </div>
       
-      <div class="row">
+      <div class="col-md-4">
+        <div class="member">
+          <div class="pic"><a target="_blank" href="https://www.linkedin.com/in/caitlin-nelson-a18643a/"><img src="img/b.jpg" alt=""></a></div>
+          <h4>Caitlin Nelson</h4>
+          <span>VP Sales - SocialCode</span>
+          <div class="c-social social-buttons">
+            <a href="https://www.linkedin.com/in/caitlin-nelson-a18643a/"><i class="fa fa-linkedin-square fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="member">
+          <div class="pic">
+            <a target="_blank" href="https://www.linkedin.com/in/ryan-tokar-13521a22/"><img src="img/c.jpg" alt=""></a>
+          </div>
+          <h4>Ryan Tokar</h4>
+          <span>Sr. Account Executive - Federated Media</span>
+          <div class="c-social social-buttons">
+            <a href="https://www.linkedin.com/in/ryan-tokar-13521a22/"><i class="fa fa-linkedin-square fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row ref-row">
         <div class="col-md-4">
           <div class="member">
-            <div class="pic"><img src="img/a.jpg" alt=""></div>
+            <div class="pic">
+              <a target="_blank" href="https://www.linkedin.com/in/ashley-janes-0183585/"><img src="img/a.jpg" alt=""></a>
+            </div>
             <h4>Ashley Janes</h4>
-            <span>Sr. Consultant at 9Gauge Partners, LLC</span>
-            <div class="social">
+            <span>Sr. Consultant - 9Gauge Partners, LLC</span>
+            <div class="c-social social-buttons">
               <a href="https://www.linkedin.com/in/ashley-janes-0183585/"><i class="fa fa-linkedin-square fa-2x"></i></a>
             </div>
           </div>
         </div>
-        
-        <div class="col-md-4">
-          <div class="member">
-            <div class="pic"><img src="img/b.jpg" alt=""></div>
-            <h4>Caitlin Nelson</h4>
-            <span>VP Sales at SocialCode</span>
-            <div class="social">
-              <a href="https://www.linkedin.com/in/caitlin-nelson-a18643a/"><i class="fa fa-linkedin-square fa-2x"></i></a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="member">
-            <div class="pic"><img src="img/c.jpg" alt=""></div>
-            <h4>Ryan Tokar</h4>
-            <span>Senior Account Executive at Federated Media</span>
-            <div class="social">
-              <a href="https://www.linkedin.com/in/ryan-tokar-13521a22/"><i class="fa fa-linkedin-square fa-2x"></i></a>
-            </div>
-          </div>
-        </div>
-        
-      </div>  
+      </div>
+
     </div>
   </section>
     
@@ -301,7 +263,9 @@
         <div class="col-md-12">
           <h3 class="section-title">Contact</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Feel free to contact me at any of methods below.</p>
+          <p class="section-description">Feel free to contact me at any of the methods below.</p>
+          <br>
+          <br>
         </div>
       </div>
       
@@ -340,15 +304,8 @@
               <p>Austin, TX 78748</p>
             </div>
             
-            <!-- <div> -->
-              <!-- <i class="fa fa-envelope"></i> -->
-<!--               <p>Email: gomez.r@live.com</p>
-            </div> -->
-            
             <div>
-              <!-- <i class="fa fa-phone"></i> -->
               <p>Phone: (909) 856-2547</p>
-            <!-- </div> -->
 
               <!-- <div class="col-md-3 social  col-xs-6"> -->
                 <ul class="list-inline social-buttons">
@@ -370,10 +327,10 @@
       </div>
     </div>
   </div>
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up">
   </section>
+  </i></a>
   
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    
   <!-- Required JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
@@ -386,11 +343,7 @@
   <script src="lib/easing/easing.js"></script>
   
   <!-- Template Specisifc Custom Javascript File -->
-  <script src="./js/custom.js"></script>
-
-  <!-- <script src="./js/jqBootstrapValidation.js"></script> -->
-  <!-- <script src="./js/contact_me.js"></script> -->
-  
+  <script src="./js/custom.min.js"></script>
     
 </body>
 </html>

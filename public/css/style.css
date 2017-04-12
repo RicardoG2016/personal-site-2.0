@@ -52,14 +52,16 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: rgba(0, 0, 0, 0.2);
   color: #fff;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
   border-radius: 2px;
   right: 15px;
   bottom: 15px;
-  transition: background 0.5s;
+  transition: background 0.4s;
+  border-radius: 90%;
+  border-style: solid;
+  border-color: transparent;
 }
 
 @media (max-width: 768px) {
@@ -69,14 +71,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:focus {
-  background: rgba(0, 0, 0, 0.2);
   color: #fff;
-  outline: none;
+  /*outline: none;*/
 }
 
 .back-to-top:hover {
-  background: #03C4EB;
-  color: #fff;
+  background-color: black;
 }
 
 /*--------------------------------------------------------------
@@ -152,6 +152,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 100%;
     max-width: 50%;
     margin: 0px auto;
+    text-align: center;
   }
 
   .actions a{
@@ -196,6 +197,10 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #fff;
   color: #fff;
   cursor: pointer;
+}
+
+.actions{
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -252,6 +257,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .is-sticky #header {
   background: rgba(0, 0, 0, 0.85);
+}
+
+.intro-header{
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -390,6 +399,10 @@ h1, h2, h3, h4, h5, h6 {
   #mobile-nav-toggle {
     display: inline;
   }
+  .p-iphone-row{
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
 }
 
 /* Mobile Nav Styling */
@@ -477,11 +490,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Sections
---------------------------------------------------------------*/
-/* Sections Common
-------------------------------*/
+/*Sections Common*/
+/*------------------------------*/
 .section-title {
   font-size: 40px;
   color: #26322d;
@@ -490,9 +500,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
 }
 
-.section-description {
-  text-align: center;
-  /*margin-bottom: 40px;*/
+.project-title: {
+  margin-bottom: 0px;
 }
 
 .section-title-divider {
@@ -500,14 +509,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 3px;
   background: #03C4EB;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 90px;
 }
 
+.p.section-title-divider {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+p.section-description{
+  text-align: center;
+}
 /* Get Started Section
 --------------------------------*/
 #about {
   background: #fff;
-  padding: 80px 0;
+  padding: 80px 20px;
 }
 
 #about .about-container {
@@ -515,12 +532,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .about-img img{
-  padding: 5%;
+  padding: 0 0 10% 0; 
   padding-right: 0;
-  padding-left: 5%;
   max-width: 90%;
   max-height: 90%;
-  padding-bottom: 15%;
 }
 
 .about-img{
@@ -529,7 +544,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-content {
   background: #fff;
-  margin-top: 20px;
 }
 
 #about .about-title {
@@ -546,13 +560,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
+#about-title{
+  padding-top:30px;
+}
+
 @media (max-width: 992px) {
   img{
-    padding-bottom: 0;
+    padding: 0;
   }
 
   section#about{
     margin-top: 100px;
+    margin-bottom: 50px;
   }
 
 }
@@ -561,6 +580,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 .p-row{
   height: 500px;
+  margin-top: 30px;
 }
 
 #portfolio {
@@ -613,8 +633,11 @@ background-image{
   font-weight: 700;
   color: #263238;
   padding-top: 30px;
-  margin-top: 30px;
   margin-bottom: 0;
+}
+
+.details h4#mac-title {
+  padding-top: 60px;
 }
 
 #portfolio .portfolio-item:hover .details {
@@ -637,12 +660,13 @@ background-image{
 
 @media (max-width: 414px) {
 
+  .ipad{
+    margin-top: 30px;
+  }
+
   h1{
     margin-top: 100px;
     padding: 0px !important
-  }
-  section#about{
-    margin-top: 0px;
   }
 
   #contact{
@@ -650,8 +674,8 @@ background-image{
     padding-right: 15%;
   }
 
-  a.iphone-img{
-    padding-top: 20px;
+  #portfolio.iphone-img{
+    height: 428px;
   }
 
   a.ipad-img{
@@ -660,11 +684,15 @@ background-image{
 
   h3.project-title.section-title{
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
   }
 
   h3.ref.section-title{
-    margin-top: 200px;
+    margin-top: 300px;
+  }
+
+  #portfolio {
+    padding: 45px 0;
   }
 
   #portfolio .portfolio-item{
@@ -674,8 +702,8 @@ background-image{
     margin-top: 130px;
   }
   #about .about-content {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     margin-top: 0px;
   }
 
@@ -685,9 +713,13 @@ background-image{
   }
 
   h4.ipad-title{
-    padding-top: 20px !important;
+    padding-top: 60px !important;
   }
 
+  .p-iphone-row{
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -712,6 +744,9 @@ background-image{
     margin-top: 260px;
   }
 
+  .p-iphone-row{
+    padding-top: 40px;
+  }
 
 }
 
@@ -746,7 +781,7 @@ background-image{
 #team .member span {
   font-style: italic;
   display: block;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 #team .member .social {
@@ -838,11 +873,11 @@ background-image{
   background: #25d8fc;
 }
 
-button:hover{
+/*button:hover{
   -webkit-box-shadow: 0px 9px 28px -1px rgba(201,201,201,1);
   -moz-box-shadow: 0px 9px 28px -1px rgba(201,201,201,1);
   box-shadow: 0px 9px 28px -1px rgba(201,201,201,1);
-}
+}*/
 
 li a {
     display: inline;
@@ -863,4 +898,77 @@ section#portfolio{
 
 }
 
+.fa{
+  color: #03c4eb;
+}
+
+/*Sections*/
+/*------------------------------*/
+
+section#team{
+  margin-top: 0;
+}
+
+h3.ref.section-title {
+  margin-top: 33px;
+}
+
+
+
+section#portfolio{
+  padding: 60px 0px ;
+  padding-bottom: 0px;
+}
+
+section#about{
+  padding-top: 0px;
+  margin-top:80px;
+}
+
+@media (max-width: 588px) {
+  section#team{
+    margin-top: 170px;
+  }
+}
+
+@media (max-width: 415px) {
+
+  section#team{
+    margin-top: 350px;
+  }
+
+  section#portfolio{
+    margin-top: 0px;
+  }
+  section#about{
+    margin-top: 80px;
+  }
+
+  h3.ref.section-title {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  section#about{
+    margin-top: 150px;
+  }
+  section#team{
+  margin-top: 438px;
+  }
+}
+
+@media (min-width: 1024px) {
+  section#team{
+    margin-top: 140px;
+  }
+}
+
+.p-button:hover{
+  background-color: white;
+}
+
+.p-button:focus{
+  color: black !important;
+}
 
