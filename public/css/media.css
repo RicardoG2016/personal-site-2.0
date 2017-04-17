@@ -1,0 +1,265 @@
+/*section*/
+
+@media (min-width: 1024px) {
+  section#team{
+    margin-top: 140px;
+  }
+}
+
+.p-button:hover{
+  background-color: white;
+}
+
+.p-button:focus{
+  color: black !important;
+}
+
+@media (max-width: 992px) {
+  img{
+    padding: 0;
+  }
+
+  section#about{
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .project-title{
+    margin-top:100px;
+  }
+  .ipad{
+    /*margin-top: 80px;*/
+  }
+
+  h3.section-title{
+    margin-top: 30px;
+  }
+
+  .web-view.iphone{
+    display: none;
+  }
+
+  .mobile-view{
+    display: block;
+    margin-top: 260px;
+  }
+
+  .mobile{
+    margin-top: 0;
+  }
+  
+  div.info{
+    text-align: center;
+  }
+  #contact .info p{
+    padding-left: 0px;
+  }
+
+  .col-md-6 > a{
+    margin-top: 50px;
+  }
+  .col-md-7 > a{
+    margin-top: 50px;
+  }
+
+  a.initial.portfolio-item {
+    margin-top: 0px;
+  }
+
+  #portfolio .details h4 {
+    padding-top: 0px;
+  }
+
+  h4.ipad-title{
+    padding-top: 50px !important;
+  }
+}
+
+/*-------------768-------------*/
+
+@media (max-width: 768px) {
+  #hero h1 {
+    padding-bottom: 60px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+  #hero h2 .rotating {
+    font-size: 19px;
+    display: block;
+    color: #fff;
+    float: left;
+  }
+
+  #header {
+    height: 80px;
+  }
+  #header #logo h1 {
+    font-size: 26px;
+  }
+  #header #logo img {
+    max-height: 40px;
+  }
+
+  #nav-menu-container {
+    display: none;
+  }
+
+  #mobile-nav-toggle {
+    display: inline;
+  }
+  .p-iphone-row{
+    margin-bottom: 30px;
+  }
+  .fourth{
+    margin-top: 160px;
+  }
+
+  a.portfolio-item.ipad-img{
+    margin-top: 60px;
+  }
+  
+  div.p.section-title-divider{
+    margin-bottom: 0;
+  }
+}
+
+
+@media (max-width: 588px) {
+  section#team{
+    margin-top: 170px;
+  }
+}
+
+/*-------------460-------------*/
+
+@media (max-width: 460px) {
+  h1 {
+    padding: 0px;
+  }
+  .actions{
+    padding-top: 140px;
+    max-width: 100%;
+    max-width: 50%;
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  .actions a{
+    text-align: center;
+  }
+}
+
+
+ /*final media*/
+@media (max-width: 414px) {
+
+  .ipad{
+    margin-top: 30px;
+  }
+
+  h1{
+    margin-top: 100px;
+    padding: 0px !important
+  }
+
+  #contact{
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  #portfolio.iphone-img{
+    height: 428px;
+  }
+
+  a.ipad-img{
+    margin-bottom: 25px;
+  }
+
+  h3.project-title.section-title{
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  h3.ref.section-title{
+    margin-top: 300px;
+  }
+
+  #portfolio {
+    padding: 45px 0;
+  }
+
+  #portfolio .portfolio-item{
+    height: 300px;
+  }
+  div.mobile-view{
+    margin-top: 130px;
+  }
+  #about .about-content {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 0px;
+  }
+
+  h4{
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+  }
+
+  h4.ipad-title{
+    padding-top: 60px !important;
+  }
+
+  .p-iphone-row{
+    /*padding-top: 20px;*/
+    margin-bottom: 30px;
+  }
+
+    section#team{
+    margin-top: 350px;
+  }
+
+  section#portfolio{
+    margin-top: 0px;
+  }
+  section#about{
+    margin-top: 80px;
+  }
+
+  h3.ref.section-title {
+    margin-top: 40px;
+  }
+
+  .fourth{
+    max-height: 200px;
+    margin-top: 70px;
+  }
+  
+  a.iphone-img{
+    margin-top: 0;
+  }
+
+}
+
+@media (max-width: 375px) {
+  section#about{
+    margin-top: 150px;
+  }
+  section#team{
+  margin-top: 438px;
+  }
+
+  .p-row.fourth{
+    margin-top: 70px;
+  }
+
+  div.mobile-view{
+    margin-top: 180px;
+  }
+}
+
